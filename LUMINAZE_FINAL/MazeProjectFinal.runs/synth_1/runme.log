@@ -1,0 +1,309 @@
+
+*** Running vivado
+    with args -log TOP_LEVEL.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_LEVEL.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source TOP_LEVEL.tcl -notrace
+Command: synth_design -top TOP_LEVEL -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 51060
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1027.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOP_LEVEL' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/TOP_LEVEL.v:25]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/clk_div.v:22]
+	Parameter div_value bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (1#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/clk_div.v:22]
+INFO: [Synth 8-6157] synthesizing module 'LDR_integration' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/LDR_integration.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LDR_integration' (2#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/LDR_integration.v:23]
+INFO: [Synth 8-6157] synthesizing module 'h_counter' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/h_counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'h_counter' (3#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/h_counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'v_counter' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/v_counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'v_counter' (4#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/v_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/vga_sync.v:23]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (5#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/vga_sync.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/pixel_gen.v:21]
+	Parameter START bound to: 2'b00 
+	Parameter GAME bound to: 2'b01 
+	Parameter WIN bound to: 2'b10 
+	Parameter LOSE bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'startscreen' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/startscreen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'startscreen' (6#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/startscreen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'maze' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/maze.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'maze' (7#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/maze.v:2]
+INFO: [Synth 8-6157] synthesizing module 'player_module' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/player_module.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'player_module' (8#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/player_module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'win_screen' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/win_screen.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'win_screen' (9#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/win_screen.v:25]
+INFO: [Synth 8-6157] synthesizing module 'lose_screen' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/lose_screen.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'lose_screen' (10#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/lose_screen.v:24]
+INFO: [Synth 8-6157] synthesizing module 'destination' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/destination.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'destination' (11#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/destination.v:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/pixel_gen.v:103]
+INFO: [Synth 8-6157] synthesizing module 'Counter_nums' [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/Counter_nums.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'Counter_nums' (12#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/Counter_nums.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (13#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/pixel_gen.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'TOP_LEVEL' (14#1) [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/TOP_LEVEL.v:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1027.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1027.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1027.359 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1027.359 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/constrs_1/new/const3.xdc]
+Finished Parsing XDC File [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/constrs_1/new/const3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/constrs_1/new/const3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_LEVEL_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_LEVEL_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1033.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1033.188 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.188 ; gain = 5.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1033.188 ; gain = 5.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1033.188 ; gain = 5.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pixel_gen'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   START |                               00 |                               00
+                    GAME |                               01 |                               01
+                     WIN |                               10 |                               10
+                    LOSE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'pixel_gen'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1033.188 ; gain = 5.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 3     
+	   2 Input   11 Bit       Adders := 51    
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   3 Input    4 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 7     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	  31 Input   30 Bit        Muxes := 3     
+	  17 Input   16 Bit        Muxes := 2     
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 11    
+	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 9     
+	  10 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 1     
+	  16 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1033.188 ; gain = 5.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|maze        | p_0_out    | 32x27         | LUT            | 
+|maze        | p_0_out    | 32x27         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1033.188 ; gain = 5.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1033.188 ; gain = 5.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1048.770 ; gain = 21.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.605 ; gain = 27.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.605 ; gain = 27.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.605 ; gain = 27.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.605 ; gain = 27.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.605 ; gain = 27.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.605 ; gain = 27.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    25|
+|3     |LUT1   |     6|
+|4     |LUT2   |    68|
+|5     |LUT3   |    37|
+|6     |LUT4   |    95|
+|7     |LUT5   |    94|
+|8     |LUT6   |   204|
+|9     |MUXF7  |    14|
+|10    |FDRE   |    73|
+|11    |FDSE   |     9|
+|12    |IBUF   |     7|
+|13    |OBUF   |    15|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.605 ; gain = 27.246
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1054.605 ; gain = 21.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1054.605 ; gain = 27.246
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1066.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1066.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1066.641 ; gain = 39.281
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.runs/synth_1/TOP_LEVEL.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_LEVEL_utilization_synth.rpt -pb TOP_LEVEL_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 16:03:07 2024...

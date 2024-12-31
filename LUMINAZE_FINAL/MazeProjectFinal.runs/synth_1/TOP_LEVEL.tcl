@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.runs/synth_1/TOP_LEVEL.tcl"
+  variable script "C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.runs/synth_1/TOP_LEVEL.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 5
+set_param chipscope.maxJobs 1
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
@@ -78,29 +78,29 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.cache/wt [current_project]
-set_property parent.project_path C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.cache/wt [current_project]
+set_property parent.project_path C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/Counter_nums.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/LDR_integration.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/clk_div.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/destination.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/h_counter.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/lose_screen.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/maze.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/pixel_gen.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/player_module.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/startscreen.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/v_counter.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/vga_sync.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/win_screen.v
-  C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/sources_1/new/TOP_LEVEL.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/Counter_nums.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/LDR_integration.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/clk_div.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/destination.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/h_counter.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/lose_screen.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/maze.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/pixel_gen.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/player_module.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/startscreen.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/v_counter.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/vga_sync.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/win_screen.v
+  C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/sources_1/new/TOP_LEVEL.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -111,8 +111,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/constrs_1/new/const3.xdc
-set_property used_in_implementation false [get_files C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.srcs/constrs_1/new/const3.xdc]
+read_xdc C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/constrs_1/new/const3.xdc
+set_property used_in_implementation false [get_files C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.srcs/constrs_1/new/const3.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

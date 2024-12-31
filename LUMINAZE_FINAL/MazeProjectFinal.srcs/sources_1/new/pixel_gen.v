@@ -95,8 +95,8 @@ always @(posedge v_sync) begin
                 if (startgame) begin
                     state <= GAME;      // Transition to GAME state on startgame signal
                     reset <= 0;         // Release player reset in GAME state
-                    second_num <= 5;
-                    first_num <= 9;
+                    second_num <= 4;
+                    first_num <= 5;
                     timer_flag <= 0;
                     framecount <= 0;    // Reset framecount when starting
                 end

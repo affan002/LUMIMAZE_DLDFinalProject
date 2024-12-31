@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.runs/impl_1/TOP_LEVEL.tcl"
+  variable script "C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.runs/impl_1/TOP_LEVEL.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,10 +122,10 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 5
+  set_param chipscope.maxJobs 1
   set_param xicom.use_bs_reader 1
   open_checkpoint TOP_LEVEL_routed.dcp
-  set_property webtalk.parent_dir C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.cache/wt [current_project]
 set_property TOP TOP_LEVEL [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

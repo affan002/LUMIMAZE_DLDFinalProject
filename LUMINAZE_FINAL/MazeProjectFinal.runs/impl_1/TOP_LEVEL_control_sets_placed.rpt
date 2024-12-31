@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Wed Dec 11 16:03:52 2024
-| Host         : HU-DOPX-PWL08 running 64-bit major release  (build 9200)
+| Date         : Fri Dec 13 09:41:24 2024
+| Host         : DESKTOP-G8KFEG6 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_LEVEL_control_sets_placed.rpt
 | Design       : TOP_LEVEL
 | Device       : xc7a35t
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              15 |           10 |
+| No           | No                    | No                     |              15 |            9 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              26 |           10 |
+| No           | Yes                   | No                     |              26 |           11 |
 | Yes          | No                    | No                     |              25 |           12 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              19 |            8 |
+| Yes          | Yes                   | No                     |              19 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -73,19 +73,19 @@ Table of Contents
 +----------------------+--------------------------+-----------------------+------------------+----------------+--------------+
 |     Clock Signal     |       Enable Signal      |    Set/Reset Signal   | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------------+--------------------------+-----------------------+------------------+----------------+--------------+
-|  pg/player/animate   |                          |                       |                1 |              1 |         1.00 |
+|  pg/player/new_frame |                          |                       |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG       |                          |                       |                1 |              2 |         2.00 |
-|  vc/v_count_reg[3]_0 |                          |                       |                2 |              4 |         2.00 |
-|  vc/v_count_reg[3]_0 | pg/smallnum[3]_i_1_n_0   |                       |                1 |              4 |         4.00 |
-|  vc/v_count_reg[3]_0 | pg/mednum[3]_i_1_n_0     |                       |                2 |              4 |         2.00 |
-|  clk_d_OBUF_BUFG     |                          | vc/collision026_out   |                1 |              4 |         4.00 |
-|  vc/v_count_reg[3]_0 | pg/framecount[6]_i_1_n_0 |                       |                3 |              7 |         2.33 |
+|  vc/v_count_reg[3]_3 |                          |                       |                1 |              4 |         4.00 |
+|  vc/v_count_reg[3]_3 | pg/second_num[3]_i_1_n_0 |                       |                2 |              4 |         2.00 |
+|  vc/v_count_reg[3]_3 | pg/first_num[3]_i_1_n_0  |                       |                1 |              4 |         4.00 |
+|  clk_d_OBUF_BUFG     |                          | vc/collision026_out   |                2 |              4 |         2.00 |
+|  vc/v_count_reg[3]_3 | pg/framecount[6]_i_1_n_0 |                       |                3 |              7 |         2.33 |
 |  clk_d_OBUF_BUFG     |                          |                       |                6 |              8 |         1.33 |
-|  pg/player/animate   | ldr_intg/x_pos0          | pg/reset_reg_0        |                4 |              9 |         2.25 |
-|  pg/player/animate   | pg/player/y_pos          |                       |                6 |             10 |         1.67 |
-|  clk_d_OBUF_BUFG     |                          | hc/h_count[9]_i_1_n_0 |                5 |             10 |         2.00 |
-|  clk_d_OBUF_BUFG     | vc/v_count0              | vc/v_count[9]_i_1_n_0 |                4 |             10 |         2.50 |
-|  clk_d_OBUF_BUFG     |                          | hc/SR[0]              |                4 |             12 |         3.00 |
+|  pg/player/new_frame | ldr_intg/x_pos0          | pg/reset_reg_0        |                3 |              9 |         3.00 |
+|  pg/player/new_frame | pg/player/y_pos          |                       |                6 |             10 |         1.67 |
+|  clk_d_OBUF_BUFG     |                          | hc/h_count[9]_i_1_n_0 |                3 |             10 |         3.33 |
+|  clk_d_OBUF_BUFG     | vc/v_count0              | vc/v_count[9]_i_1_n_0 |                7 |             10 |         1.43 |
+|  clk_d_OBUF_BUFG     |                          | vc/SR[0]              |                6 |             12 |         2.00 |
 +----------------------+--------------------------+-----------------------+------------------+----------------+--------------+
 
 

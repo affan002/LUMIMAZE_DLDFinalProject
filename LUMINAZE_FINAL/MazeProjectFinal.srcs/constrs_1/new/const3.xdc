@@ -1,7 +1,7 @@
 
 set_property IOSTANDARD LVCMOS33 [get_ports LDR1]
 set_property IOSTANDARD LVCMOS33 [get_ports LDR2]
-set_property IOSTANDARD LVCMOS33 [get_ports LDR3]
+set_property IOSTANDARD LVCMOS33 [get_ports LDR3] 
 set_property IOSTANDARD LVCMOS33 [get_ports LDR4]
 set_property IOSTANDARD LVCMOS33 [get_ports {blue[3]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {blue[2]}]

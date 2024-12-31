@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ts09263/Downloads/MazeProjectFinal_12th/MazeProjectFinal/MazeProjectFinal.runs/impl_1'
+HD_PWD='C:/Users/Public/Dev/LUMIMAZE/LUMIMAZE/LUMINAZE_FINAL/MazeProjectFinal.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
